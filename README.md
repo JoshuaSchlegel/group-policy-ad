@@ -14,7 +14,7 @@ This tutorial picks up directly where the <a href="https://github.com/JoshuaSchl
 - Remote Desktop
 - Active Directory Domain Services
 - Group Policy Management Console
-- PowerShell
+- Command Prompt
 
 <h2>👨‍💻 Operating Systems Used </h2>
 
@@ -55,14 +55,24 @@ This tutorial picks up directly where the <a href="https://github.com/JoshuaSchl
 - Back in GPM (Group Policy Management), right click on "Default Domain Policy" to rename it to "Account Lockout Policy"
 - Then, right click on the "_EMPLOYEES" organizational unit and select "Link an Existing GPO..."
 - Double click on "Account Lockout Policy" or click "OK"
-- Open up "Active Directory Users and Computers" from the start menu
-- Click on "_EMPLOYEES"
-- Pick any user account that we created previously **(I suggest picking one that is easy/simple to remember.)**
-- Pull up a second "Remote Desktop" as if you are going to log into Client1
-- Use the "mydomain.com\user" username but instead of actually logging into Client1, get the password incorrect at least 5 times on purpose
-- 
+- Log into Client1 as mydomain.com\jane_admin
+- Pull up Command line as an admin
+- Type "gpupdate /force" and hit Enter
+- Type "gpresult /r"  and hit Enter to see where it shows "Account Lockout Policy" has been applied
 
 ![image](https://github.com/user-attachments/assets/cbc19b54-27c0-4bfb-a8c6-5eb44e76b41b)
 
+![image](https://github.com/user-attachments/assets/924cecbb-7149-455f-9b66-70816b780821)
 
+![image](https://github.com/user-attachments/assets/5855ebc4-c875-4381-99c9-bd4ab2155640)
 
+![image](https://github.com/user-attachments/assets/ac8d948d-4a6e-4a3e-bc8b-8c585e933262)
+
+![image](https://github.com/user-attachments/assets/30453ad3-57e0-475c-84d9-f8d74ee0cbc9)
+
+- Open up "Active Directory Users and Computers" from the start menu
+- Click on "_EMPLOYEES"
+- Pick any user account that we created previously **(I suggest picking one that is easy/simple to remember.)**
+- Log off of Client1 and get ready to log back into it as the user account you chose from _EMPLOYEES
+- Use the "mydomain.com\user" username but instead of actually logging into Client1, get the password incorrect at least 5 times on purpose
+- 
