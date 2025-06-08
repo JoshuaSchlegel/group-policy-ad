@@ -50,11 +50,19 @@ This tutorial picks up directly where the <a href="https://github.com/JoshuaSchl
 
 ![image](https://github.com/user-attachments/assets/4c1f96fe-1f4d-4cd7-9ca7-e0dacf49d736)
 
-**Notice the other policies update as well. You will see that the Account lockout threshold is set to 5 inlaid logon attempts. Let us put that to the test shall we?**
+**Notice the other policies update as well. You will see that the Account lockout threshold is set to 5 inlaid logon attempts. Let us put that to the test 🙃**
 
-
+- Back in GPM (Group Policy Management), right click on "Default Domain Policy" to rename it to "Account Lockout Policy"
+- Then, right click on the "_EMPLOYEES" organizational unit and select "Link an Existing GPO..."
+- Double click on "Account Lockout Policy" or click "OK"
+- Open up "Active Directory Users and Computers" from the start menu
+- Click on "_EMPLOYEES"
 - Pick any user account that we created previously **(I suggest picking one that is easy/simple to remember.)**
+- Pull up a second "Remote Desktop" as if you are going to log into Client1
+- Use the "mydomain.com\user" username but instead of actually logging into Client1, get the password incorrect at least 5 times on purpose
+- 
 
+![image](https://github.com/user-attachments/assets/cbc19b54-27c0-4bfb-a8c6-5eb44e76b41b)
 
 
 
