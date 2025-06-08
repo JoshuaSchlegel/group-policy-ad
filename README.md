@@ -75,9 +75,10 @@ This tutorial picks up directly where the <a href="https://github.com/JoshuaSchl
 - Pick any user account that we created previously **(I suggest picking one that is easy/simple to remember.)**
 - Log off of Client1 and get ready to log back into it as the user account you chose from _EMPLOYEES
 - Use the "mydomain.com\user" username but instead of actually logging into Client1, get the password incorrect at least 5 times on purpose
-**You should see a pop up message letting you know that the user account has been locked due to too many logon attempts and this should make us happy since we know it worked!**
+
+***You should see a pop up message letting you know that the user account has been locked due to too many logon attempts and this should make us happy since we know it worked!***
 
   ![image](https://github.com/user-attachments/assets/e68f2a9d-c4f1-41ca-bfdc-2e05312715c1)
 
-**Now lets be a good Sys Admin and unlock this user's account.**
+***Now lets be a good Sys Admin and unlock this user's account.***
 
