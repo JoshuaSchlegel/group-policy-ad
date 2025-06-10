@@ -91,3 +91,6 @@ This tutorial picks up directly where the <a href="https://github.com/JoshuaSchl
 ***Feel free to explore the other tabs within a user's properties to see what kind of info we can edit as well as controls we can apply. If you right click on the user, notice that it provides the option to disable the account as well. You can also create another Organizational Unit named "Assistants" or "Right Hands" just to provide those users with more access for certain tasks and what not. It's a great way to play around and practice managing users within Active Directory.*** 👍
 
 ***Now we can deploy a cool Company Wallpaper Policy for our users.***
+
+- The same way we started with the Account Lockout Policy, we will start with the Wallpaper Policy. Pull up the Group Policy Management Console within DC1
+- 
