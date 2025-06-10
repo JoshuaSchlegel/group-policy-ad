@@ -80,5 +80,14 @@ This tutorial picks up directly where the <a href="https://github.com/JoshuaSchl
 
   ![image](https://github.com/user-attachments/assets/e68f2a9d-c4f1-41ca-bfdc-2e05312715c1)
 
-***Now lets be a good Sys Admin and unlock this user's account.***
+***Now lets be a good Sys Admin and unlock this user's account.*** 😏
 
+- Back in DC1, pull up ADUC (Active Directory Users and Computers), and find the user that was locked out in "_EMPLOYEES"
+- Right click on the user -> select "Properties", go to the "Account" tab and check the box next to "Unlock account"
+- Click "Apply" and "OK"
+
+![image](https://github.com/user-attachments/assets/c5d3f441-3b47-4aa5-b0b6-eead1cb33b47)
+
+***Feel free to explore the other tabs within a user's properties to see what kind of info we can edit as well as controls we can apply. If you right click on the user, notice that it provides the option to disable the account as well. You can also create another Organizational Unit named "Assistants" or "Right Hands" just to provide those users with more access for certain tasks and what not. It's a great way to play around and practice managing users within Active Directory.*** 👍
+
+***Now we can deploy a cool Company Wallpaper Policy for our users.***
