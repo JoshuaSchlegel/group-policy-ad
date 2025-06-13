@@ -92,5 +92,62 @@ This tutorial picks up directly where the <a href="https://github.com/JoshuaSchl
 
 ***Now we can deploy a cool Company Wallpaper Policy for our users.***
 
+- First, pull up "File Explorer" within DC1 from the start menu or by searching for it in the taskbar
+- Navigate to the "Windows (C:)" drive and right click in the white space -> New -> Folder
+- Name the folder "CompanyWallpaper"
+
+![image](https://github.com/user-attachments/assets/243692b3-77a1-4b77-8cce-ce88969f1ede)
+
+
+- Right click on the folder -> select "Properties"
+- Click on the "Sharing" tab up top -> Click on "Share"
+- Click the drop down and select "Find People"
+- Type "domain users" in the text box and click on Check Names on right side -> Click "OK"
+- Click "Share" on bottom right
+***This is also how you would share folders/files within Active Directory to a Client's users and set permissions for those files such as "Read or Read/Write".***
+
+![image](https://github.com/user-attachments/assets/1e594a9a-4839-41a6-aa0c-57ad3c5a2053)
+
+![image](https://github.com/user-attachments/assets/b108e833-3911-41c1-9b9f-0df12271310b)
+
+📝**NOTE:**
+- ***Take note of the absolute path (UNC path) to this file as we will need it for the policy.***
+
+![image](https://github.com/user-attachments/assets/8a35ef8a-4cce-44fa-addf-010f6b9e422a)
+
+- Next, google a wallpaper you'd like to set for Client1 users within DC1 
+- When you find it, make sure to right click and "save image as" so you can navigate to the "CompanyWallpaper" folder you created and save it in there and name it as "companywallpaper.jpg"
+
+![image](https://github.com/user-attachments/assets/ec815f7b-65b4-4589-b6cc-922acca24276)
+
 - The same way we started with the Account Lockout Policy, we will start with the Wallpaper Policy. Pull up the Group Policy Management Console within DC1
-- 
+- Since Client1 is located in the Organizational Unit "_CLIENTS" in Active Directory, we will right click on "_CLIENTS" in Group Policy Management and select "Create a GPO in this domain, and Link it here.."
+- Name it "Company Wallpaper Policy"
+- Right click on the new GPO and select "Edit"
+- You'll click on the drop down for "User Configuration" -> "Policies" -> "Administrative Templates" -> Select "Desktop"
+- Double click "Desktop Wallpaper" in the right side (Notice how it gives you a Description of what the policy setting does after clicking on it once)
+
+![image](https://github.com/user-attachments/assets/167457d1-26d1-4d8e-b874-c2196acbe861)
+
+![image](https://github.com/user-attachments/assets/f2610f01-00b3-445a-9a2d-852970519190)
+
+- Click the bullet next to "Enabled"
+- Type the UNC or Absolute Path as the wallpaper name. If you've named everything as I have, it will be **\\DC1.mydomain.com\CompanyWallpaper\companywallpaper.jpg**
+- Click "Apply" -> "OK"
+
+![image](https://github.com/user-attachments/assets/e67eb65f-1312-4b27-97bc-80a1c0f60f7f)
+
+***You should see the Company Wallpaper Policy under _CLIENTS in Group Policy Management now.***
+
+![image](https://github.com/user-attachments/assets/63761e6e-0659-4dc2-9611-38ec10b249f8)
+
+- Log into Client1 VM using Remote Desktop as mydomain.com\jane_admin
+- Pull up Command Prompt as Admin to type the "gpupdate /force" command just like we did earlier with the Account Lockout Policy
+
+![image](https://github.com/user-attachments/assets/563f5b4a-4256-469d-ab79-089d67174659)
+
+- Log out of Client1 and log back in as the same user you used earlier or a different user if you'd like and be proud of Client1's new wallpaper
+
+![image](https://github.com/user-attachments/assets/48a9f6ff-2807-4ba3-95d5-f388a5dce6e7)
+
+ ***And that concludes this tutorial! I hope this helped and don't forget to delete your Resources from Microsoft Azure when you're done. Feel free to play around in Active Directory to practice and gain valuable experience! Cheers!***
