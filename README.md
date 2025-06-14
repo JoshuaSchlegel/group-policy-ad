@@ -150,4 +150,4 @@ This tutorial picks up directly where the <a href="https://github.com/JoshuaSchl
 
 ![image](https://github.com/user-attachments/assets/48a9f6ff-2807-4ba3-95d5-f388a5dce6e7)
 
- ***And that concludes this tutorial! I hope this helped and don't forget to delete your Resources from Microsoft Azure when you're done. Feel free to play around in Active Directory to practice and gain valuable experience! Cheers!***
+ ***And that concludes this tutorial! I hope this helped. Don't forget to delete your Resources from Microsoft Azure when you're done. Feel free to play around in Active Directory to practice and gain valuable experience! Cheers!***
