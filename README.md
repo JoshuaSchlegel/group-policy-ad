@@ -121,13 +121,13 @@ This tutorial picks up directly where the <a href="https://github.com/JoshuaSchl
 ![image](https://github.com/user-attachments/assets/ec815f7b-65b4-4589-b6cc-922acca24276)
 
 - The same way we started with the Account Lockout Policy, we will start with the Wallpaper Policy. Pull up the Group Policy Management Console within DC1
-- Since Client1 is located in the Organizational Unit "_CLIENTS" in Active Directory, we will right click on "_CLIENTS" in Group Policy Management and select "Create a GPO in this domain, and Link it here.."
+- Right click on "_EMPLOYEES" in Group Policy Management and select "Create a GPO in this domain, and Link it here.."
 - Name it "Company Wallpaper Policy"
 - Right click on the new GPO and select "Edit"
 - You'll click on the drop down for "User Configuration" -> "Policies" -> "Administrative Templates" -> Select "Desktop"
 - Double click "Desktop Wallpaper" in the right side (Notice how it gives you a Description of what the policy setting does after clicking on it once)
 
-![image](https://github.com/user-attachments/assets/167457d1-26d1-4d8e-b874-c2196acbe861)
+![image](https://github.com/user-attachments/assets/71f917c3-a7f6-4c46-9970-03b9e32bb0ec)
 
 ![image](https://github.com/user-attachments/assets/f2610f01-00b3-445a-9a2d-852970519190)
 
@@ -137,9 +137,9 @@ This tutorial picks up directly where the <a href="https://github.com/JoshuaSchl
 
 ![image](https://github.com/user-attachments/assets/e67eb65f-1312-4b27-97bc-80a1c0f60f7f)
 
-***You should see the Company Wallpaper Policy under _CLIENTS in Group Policy Management now.***
+***You should see the Company Wallpaper Policy under _EMPLOYEES in Group Policy Management now.***
 
-![image](https://github.com/user-attachments/assets/63761e6e-0659-4dc2-9611-38ec10b249f8)
+![image](https://github.com/user-attachments/assets/95d5d398-9b1e-4a13-8757-6ea0d65bfeaa)
 
 - Log into Client1 VM using Remote Desktop as mydomain.com\jane_admin
 - Pull up Command Prompt as Admin to type the "gpupdate /force" command just like we did earlier with the Account Lockout Policy
