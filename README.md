@@ -30,7 +30,8 @@ This tutorial picks up directly where the <a href="https://github.com/JoshuaSchl
 - Log in to DC1 as mydomain.com\jane_admin
 - Pull up "Group Policy Management Console" by searching "Group Policy" in the search box in the taskbar
 - Click the arrow next to "Forest: mydomain.com" -> "Domains" -> "mydomain.com"
-- You'll see "Default Domain Policy" which you can right click and select edit **(We will use this existing policy to create the Password Lockout Policy. Later you will see how to create a new one for the Company Wallpaper Policy.)**
+- You'll see "Default Domain Policy" which you can **right click** and select **edit**
+**(We will use this existing policy to create the Password Lockout Policy. Later you will see how to create a new one for the Company Wallpaper Policy.)**
 - After right clicking and selecting "edit" on the Default Domain Policy, Click the drop down arrows next to "Computer Configuration" -> "Policies" -> "Windows Settings" -> Click on "Security Settings" -> Double click on "Account Policies"
 - Double click on "Account Lockout Policy"
 - Double click on "Account lockout duration"
