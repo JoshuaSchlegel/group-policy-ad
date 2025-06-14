@@ -6,7 +6,7 @@
 
 
 <h1>Applying Group Policies in Active Directory Using Azure VM</h1>
-This tutorial picks up directly where the <a href="https://github.com/JoshuaSchlegel/configure-ad">previous one</a> left off and outlines the use and implementation of group policies in Active Directory. Specifically password lockout policies 🔐 and a company wallpaper policy 🖼️. 
+This tutorial picks up directly where the <a href="https://github.com/JoshuaSchlegel/configure-ad">previous one</a> left off and outlines the use and implementation of group policies in Active Directory. Specifically account lockout policies 🔐 and a company wallpaper policy 🖼️. 
 
 <h2>💻 Environments and Technologies Used</h2>
 
